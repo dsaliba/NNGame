@@ -4,25 +4,25 @@
 
 Environment e;
 
-void setup(){
+void setup() {
   size(1034, 576);
   background(255);
   frameRate(60);
   e = new Environment();
 }
 
-void draw(){
+void draw() {
   clear();
   background(255);
   e.show();
 }
 
-void keyPressed(){
-  switch(key){
-    case 'w':
+void keyPressed() {
+  switch(key) {
+  case 'w':
     e.a.jump();
     break;
-    case 's':
+  case 's':
     e.a.duck(true);
     break;
   }
